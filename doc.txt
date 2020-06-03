@@ -1,0 +1,17 @@
+Serving a node.js app using express on IIS
+
+1. Download the iisnode.exe and run which create a template node environment on iis
+- make sure that iisnode.exe will not impact other sites on IIS
+- if this is completed correctly you will see your template project at http://[machinename]/node/
+
+2. Download the url rewrite extension
+- https://www.iis.net/downloads/microsoft/url-rewrite
+- make sure the express and url rewrite routes are working before continuing
+
+4. replace hello.js with your projects server.js and update the web config to reflect the changes
+- this will break the current state of the site so make sure to backup the express folder before this step
+
+5. copy the rest of your project into the express folder.
+
+6. update all routes in project to accomodate the url rewrite ex. instead of '/' is now '/node/express/pdfsplitter/'
+- NOTE: there is currently an issue with using express.static to configure an assets folder for css files so paths may need to be hard coded.

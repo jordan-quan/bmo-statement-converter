@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Raleway:500&display=swap');
+
+:root {
+	--button-font: 400 20px 'Poppins', sans-serif;
+	--title-font: 900 60px 'Raleway', sans-serif;
+}
+
+.button {
+	font: var(--button-font);
+	text-transform: lowercase;
+	flex: 1;
+	flex-basis: 20%;
+	color: white;
+	background-color: #d23636;
+	padding: 10px;
+	display: inline-block;
+	transition: all ease-in 100ms;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 10px;
+}
+
+.submit {
+	font: var(--button-font);
+	text-transform: lowercase;
+	color: white;
+	background-color: #d23636;
+	padding: 10px;
+	display: inline-block;
+	transition: all ease-in 100ms;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.textbox {
+	font: var(--button-font);
+	color: black;
+	background-color: #e5e5e5;
+	padding: 10px;
+	display: inline-block;
+	transition: all ease-in 100ms;
+	margin-bottom: 30px;
+	border: none;
+}
+.textbox:focus {
+	outline-color: #861919;
+}
+
+.home {
+	transition: none;
+	display: block;
+	position: absolute;
+	top: 3;
+	left: 3;
+	color: #757575;
+	text-align: center;
+	background-color: #e5e5e5;
+}
+
+form {
+	margin-top: 30px;
+	transition: all 0.75s cubic-bezier(0.280, 0.840, 0.420, 1);
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	animation: revealTop 1s;
+	animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+	transform-origin: top;
+	height: 250px;
+	z-index: 1;
+}
+
+.return {
+	margin-top: 25px;
+}
+
+.button:hover {
+	background-color: #861919;
+}
+
+.submit:hover {
+	background-color: #861919;
+}
+
+.home:hover {
+	background-color: #c2c2c2;
+}
+
+.button:active {
+	transform: scale(1.02);
+}
+
+.content {
+	animation: revealTop 1s;
+	animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+	transform-origin: top;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+}
+
+.content p {
+	word-break: break-word;
+}
+
+.splitters {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+body {
+	font: var(--button-font);
+	text-transform: lowercase;
+	font-size: 12px;
+	background-color: lightred;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.app {
+	flex-basis: 750px;
+	height: fit-content;
+	margin: 0px 40px 95px 40px;
+}
+
+.app p {
+	display: inline-block;
+	font: var(--button-font);
+	text-transform: lowercase;
+	margin: 10px 0px;
+}
+
+.title {
+	margin: 15px;
+	letter-spacing: 4px;
+	text-align: center;
+	font: var(--title-font);
+	text-transform: lowercase;
+	color: #d23636;
+	position: relative;
+	animation: revealSide 1s;
+	animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+	transform-origin: top;
+}
+
+#download {
+	font-size: 100px;
+	color: black;
+	margin: 20px;
+	transition: all ease-in 100ms;
+}
+
+#download:hover {
+	color: #d23636;
+}
+
+#download:active {
+	transform: scale(1.03);
+}
+
+.title::before {
+	content: "PDF Applications";
+	position: absolute;
+	color: #d1d3d4;
+	width: 100%;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	animation: move 1.8s;
+	animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+	transform-origin: top;
+	transform: translate(5px, 3px);
+}
+
+@keyframes revealSide {
+	0% {
+		opacity: 0;
+		transform: scaleX(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}
+
+@keyframes revealTop {
+	0%,
+	30% {
+		opacity: 0;
+		transform: scaleY(0.3);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes move {
+	0%,
+	52% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(5px, 3px);
+	}
+}

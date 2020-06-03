@@ -1,0 +1,24 @@
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css" href="landing.css">
+    </head>
+    <body>
+            <a class="button home" href="<%=webPath%>">All Splitters</a>
+	<div class="app">
+		<h1 class="title">PDF Splitter</h1> 
+		<div class="content">
+                <p>Please Log In</p>
+			<form action="auth" method="POST">
+                
+                    <input class="textbox" type="text" placeholder="username" name="username" autocomplete="off" readonly required 
+    onfocus="this.removeAttribute('readonly');" >
+
+<input class="textbox" type="password" name="password" placeholder="password" autocomplete="off" readonly required
+    onfocus="this.removeAttribute('readonly');" >
+                    <input class="submit" type="submit">
+            </form>
+		</div>
+	</div>
+
+    </body>
+</html> 
