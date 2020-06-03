@@ -14,22 +14,21 @@ To add a new splitter
 */
 
 //require all document types
-var InfoForm = require('./Documents/InfoForm.js');
+var BMOCredit = require('./Documents/BMOCredit.js');
 
 module.exports = {
 	//flag to change output path
 	debug: true,
 
-	//Associate splitter config info
+	//PDF splitter to extract data from bank statements
 	extract: {
-		users: [ [ 'jordan', 'password' ] ],
+		users: [['jordan', 'password']],
 		title: 'Transaction Extractor',
 		url: '/extract',
-		destination: '\\\\ohhllp.com\\Root\\APP\\ASREV\\associates',
-		//"\\\\ts-devdt-sp13\\c$\\Users\\jquan\\Desktop\\Splitter\\PDFSplitterWeb\\Output\\Associates"
-		debugPath: '\\\\ts-devdt-sp13\\c$\\TFS_Jordan\\SplitterOutput\\associate',
+		destination: '',
+		debugPath: '',
 
 		//mappings from documents types in dropdowns to functions used to split document
-		mapping: [ [ 'Info Form', InfoForm ] ]
+		mapping: [['BMO Credit Card Statment', BMOCredit]]
 	}
 };
