@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Raleway:500&display=swap');
+
+:root {
+	--title-font: 900 60px 'Raleway', sans-serif;
+}
+
+#header{
+	width: 100%;
+	position: relative;
+	height: 150px;
+}
+
+#header h1{
+	letter-spacing: 4px;
+	text-align: center;
+	font: var(--title-font);
+	width: 100%;
+	text-transform: lowercase;
+}
+
+#frontTitle{
+	color: #d23636;
+	position: absolute;
+	z-index: 1;
+}
+
+#backTitle{
+	color: #d1d3d4;
+	position: absolute;
+	z-index: 0;
+}

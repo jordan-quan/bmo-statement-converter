@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Raleway:500&display=swap');
+
+:root {
+	--button-font: 400 20px 'Poppins', sans-serif;
+	--title-font: 900 60px 'Raleway', sans-serif;
+}
+
+div, p{
+  font-family: 'Raleway', sans-serif;
+}
+
+.button {
+	font: var(--button-font);
+	text-transform: lowercase;
+	flex: 1;
+	flex-basis: 20%;
+	color: white;
+	background-color: #d23636;
+	padding: 10px;
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 10px;
+}
+
+.textbox {
+	font: var(--button-font);
+	color: black;
+	background-color: #e5e5e5;
+	padding: 10px;
+	display: inline-block;
+	margin-bottom: 30px;
+	border: none;
+}
+
+.textbox:focus {
+	outline-color: #861919;
+}

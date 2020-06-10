@@ -1,0 +1,16 @@
+.home-content { 
+  align-items: center;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.home-content p {
+	word-break: break-word;
+}
+
+.splitters {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
