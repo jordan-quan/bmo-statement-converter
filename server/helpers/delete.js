@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const deleteFiles = () => {
-	var directory = path.resolve('../api/download');
+	var directory = path.resolve('../server/download');
 
 	return new Promise(function (resolve, reject) {
 		fs.readdir(directory, (err, files) => {

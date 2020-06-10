@@ -1,0 +1,21 @@
+{
+  "name": "pdf-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm run serve",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordan-quan/BankStatementConverter.git"
+  },
+  "author": "Jordan Quan",
+  "license": "ISC"
+}
